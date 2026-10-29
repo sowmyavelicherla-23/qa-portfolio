@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sowmya Velicherla | Open to Senior QA and Quality Engineering Lead roles</title>
+<meta name="description" content="Senior QA engineer with 15+ years in SaaS, healthcare, telecommunications and retail. Playwright automation, AI-assisted testing, integration, performance and release verification.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#EDF1F4; --panel:#FFFFFF; --ink:#16263A; --muted:#55657A;
+  --line:#CDD6DF; --pass:#13795B; --pass-bg:#DDF1E8; --warn:#9A5C00; --accent:#2F5BD3;
+  --log-bg:#16263A; --log-ink:#DCE5EE; --log-dim:#8496AA;
+  color-scheme:light;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --paper:#0F1A27; --panel:#16263A; --ink:#E6EDF4; --muted:#9AABBD;
+    --line:#2A3D53; --pass:#4CC79A; --pass-bg:#173A30; --warn:#E5A23A; --accent:#7EA2FF;
+    --log-bg:#08111C; --log-ink:#DCE5EE; --log-dim:#6F8399;
+    color-scheme:dark;
+  }
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(72px + env(safe-area-inset-top,0px))}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.6 "IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque","IBM Plex Sans",system-ui,sans-serif;line-height:1.12;margin:0}
+a{color:var(--accent)}
+a:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1100px;margin:0 auto;padding:0 24px}
+p{max-width:66ch}
+
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--paper)}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--paper);border-bottom:1px solid var(--line)}
+nav{display:flex;align-items:center;justify-content:space-between;gap:16px;height:64px}
+.brand{font-weight:600;text-decoration:none;color:var(--ink)}
+.links{display:flex;gap:22px;font-size:15px}
+.links a{color:var(--muted);text-decoration:none}
+.links a:hover{color:var(--ink)}
+@media (max-width:720px){.links a:not(.keep){display:none}}
+
+.hero{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center;padding:72px 0 88px}
+.hero h1{font-size:clamp(40px,6vw,66px);font-weight:700;letter-spacing:-.02em}
+.hero .lede{font-size:19px;color:var(--muted);margin:20px 0 10px}
+.where{font-size:15px;color:var(--muted);margin:0 0 28px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;padding:12px 20px;border-radius:8px;font-weight:600;text-decoration:none;border:1.5px solid var(--ink);color:var(--ink)}
+.btn.primary{background:var(--ink);color:var(--paper)}
+@media (max-width:860px){.hero{grid-template-columns:1fr;padding:48px 0 64px}}
+
+.feature{margin:0;background:var(--log-bg);color:var(--log-ink);border-radius:16px;padding:40px 36px 32px;position:relative}
+.feature::before{content:"“";position:absolute;top:-6px;left:28px;font:700 120px/1 "Bricolage Grotesque",Georgia,serif;color:#4CC79A}
+.feature blockquote{margin:0;padding:0;border:0;background:none}
+.feature blockquote p{margin:28px 0 0;font:500 clamp(20px,2.3vw,25px)/1.45 "Bricolage Grotesque","IBM Plex Sans",system-ui,sans-serif;font-style:normal;max-width:none}
+.feature figcaption{margin-top:22px;padding-top:16px;border-top:1px solid #33485F;color:var(--log-dim);font-size:15px}
+
+section{padding:80px 0;border-top:1px solid var(--line)}
+.sec-head{margin-bottom:40px}
+.sec-head h2{font-size:clamp(30px,4vw,44px);font-weight:700;letter-spacing:-.01em}
+.sec-head p{color:var(--muted);margin:12px 0 0}
+
+/* impact */
+.impact{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:0 48px}
+.impact div{padding:22px 0;border-bottom:1px solid var(--line)}
+.impact h3{font-size:21px;font-weight:500;margin-bottom:6px}
+.impact p{margin:0;color:var(--muted);font-size:16px}
+
+/* skills */
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:40px 48px}
+.skills h3{font-size:22px;font-weight:500;margin-bottom:14px}
+.skills ul{list-style:none;margin:0;padding:0}
+.skills li{display:flex;gap:12px;padding:10px 0;border-bottom:1px solid var(--line)}
+.skills li::before{content:"✓";color:var(--pass);font-weight:600}
+.toolset{margin-top:48px;display:grid;gap:18px}
+.toolrow{display:grid;grid-template-columns:200px 1fr;gap:16px;align-items:start}
+.toolrow h3{font:500 15px/1.4 "IBM Plex Sans",system-ui,sans-serif;color:var(--muted);padding-top:6px}
+.tools{display:flex;flex-wrap:wrap;gap:8px}
+.tools span{font:500 14px "IBM Plex Mono",ui-monospace,monospace;padding:6px 12px;border-radius:6px;background:var(--pass-bg);color:var(--pass)}
+@media (max-width:640px){.toolrow{grid-template-columns:1fr;gap:6px}}
+
+/* work */
+.projects{display:grid;gap:28px}
+.project{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:32px;display:grid;grid-template-columns:1fr 1fr;gap:32px}
+.project h3{font-size:28px;font-weight:700;margin-bottom:12px}
+.project p{color:var(--muted);margin:0 0 16px}
+.project dl{margin:0;display:grid;gap:14px}
+.project dt{font-weight:600}
+.project dd{margin:2px 0 0;color:var(--muted)}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:4px}
+.tags span{font:500 13px "IBM Plex Mono",ui-monospace,monospace;padding:4px 10px;border-radius:6px;border:1px solid var(--line);color:var(--muted)}
+.note{font-size:14px;color:var(--warn);margin-top:24px}
+@media (max-width:760px){.project{grid-template-columns:1fr;padding:24px}}
+
+/* feedback */
+.quotes{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:28px}
+blockquote{margin:0;padding:24px;border-left:3px solid var(--pass);background:var(--panel);border-radius:0 12px 12px 0}
+blockquote p{margin:0;font-style:italic;font-size:18px;line-height:1.55}
+
+/* creds */
+.creds{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px}
+.cred{border:1px solid var(--line);border-radius:12px;padding:22px}
+.cred h3{font-size:20px;font-weight:500;margin-bottom:6px}
+.cred p{margin:0;color:var(--muted);font-size:15px}
+
+footer{padding:28px 0 40px;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <nav aria-label="Main">
+      <a class="brand" href="#top">Sowmya Velicherla</a>
+      <div class="links">
+        <a href="#impact">Impact</a>
+        <a href="#skills">Skills</a>
+        <a href="#work">Work</a>
+        <a class="keep" href="#contact">Contact</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="wrap hero">
+    <div>
+      <h1>Giving teams the confidence to ship.</h1>
+      <p class="lede">I protect release quality by turning critical workflows into reliable Playwright coverage, making release risk visible with clear evidence, and cutting repeated manual work with automation and AI-assisted tooling.</p>
+      <p class="where">Auckland, New Zealand · New Zealand citizen</p>
+      <div class="btns">
+        <a class="btn primary" href="#skills">See my skills</a>
+        <a class="btn" href="#contact">Get in touch</a>
+      </div>
+    </div>
+
+    <figure class="feature">
+      <blockquote><p>Excellent product knowledge and a tremendous help in getting my team up to speed quickly. She always shares her testing approach and plans, and defines E2E tests by thinking just like a real customer.</p></blockquote>
+      <figcaption>Colleague feedback</figcaption>
+    </figure>
+  </div>
+
+  <!-- IMPACT -->
+  <section id="impact">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Quality impact</h2>
+        <p>In every team I’ve joined, defects fell clearly within roughly the first year: fewer regressions, and fewer defects reaching release.</p>
+      </div>
+      <div class="impact">
+        <div><h3>Fewer regressions</h3><p>Grew Playwright end-to-end coverage from zero to 82 specification files, protecting the workflows customers and partners rely on most.</p></div>
+        <div><h3>Faster, trusted feedback</h3><p>Fixed long-standing flaky tests, aligned local runs with CI, and added AI-driven test selection so engineers stop re-running or ignoring failures.</p></div>
+        <div><h3>Unblocked delivery</h3><p>Built a reference application so engineers can test partner integrations end to end without a live partner system.</p></div>
+        <div><h3>Clearer release evidence</h3><p>Track untested workflows as coverage gaps and report bug origin by module, so leads can see where risk sits and decide with evidence.</p></div>
+        <div><h3>Less repeated manual work</h3><p>Automated recurring checks and quality reporting, freeing time for exploratory and higher-risk testing.</p></div>
+        <div><h3>Quality that scales</h3><p>Publish shared AI skills and plugins, coach developers in defect prevention, and have owned QA end to end for a team of 16 engineers.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Skills</h2>
+        <p>Hands-on every day, from test design through to release sign-off.</p>
+      </div>
+      <div class="skills">
+        <div>
+          <h3>Automation</h3>
+          <ul>
+            <li>Playwright integration, E2E and visual checks in TypeScript</li>
+            <li>Page Objects, fixtures, authentication setup and helpers</li>
+            <li>Role and test-id locators with event-based waits, not sleeps</li>
+            <li>Proving key tests fail when the fault they target is introduced</li>
+            <li>Turning defects and repeated manual checks into automation</li>
+          </ul>
+        </div>
+        <div>
+          <h3>AI-assisted testing</h3>
+          <ul>
+            <li>Daily use of Claude Code agents for authoring, investigation and planning</li>
+            <li>Building and publishing reusable skills and plugins for engineers</li>
+            <li>AI-assisted quality reporting and analysis</li>
+            <li>Critical review of generated output, not blind trust</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Release verification and risk</h3>
+          <ul>
+            <li>Repeatable release plans covering journeys, edge cases and gaps</li>
+            <li>Focused manual regression alongside automation</li>
+            <li>Separating release blockers from minor issues</li>
+            <li>Explaining impact, evidence and uncertainty clearly</li>
+            <li>Exploring lifecycle states, permissions and data variations</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Diagnosis and collaboration</h3>
+          <ul>
+            <li>Investigating CI, fixture, authentication and environment failures</li>
+            <li>Escalating with logs, traces and reproduction steps</li>
+            <li>Shift-left quality and pairing with engineers</li>
+            <li>Agreeing expected outcomes early with Product and Design</li>
+            <li>Scrum Master experience alongside QA</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="toolset">
+        <div class="toolrow"><h3>Automation and code</h3><div class="tools"><span>Playwright</span><span>TypeScript</span><span>Go</span></div></div>
+        <div class="toolrow"><h3>AI tools</h3><div class="tools"><span>Claude Code</span><span>Skills and plugins</span></div></div>
+        <div class="toolrow"><h3>API and test management</h3><div class="tools"><span>Postman</span><span>Swagger</span><span>Fiddler</span><span>TestRail</span><span>Xray</span><span>Azure Test Plans</span><span>HP ALM</span><span>Jira</span></div></div>
+        <div class="toolrow"><h3>Performance</h3><div class="tools"><span>LoadRunner</span><span>Load</span><span>Stress</span><span>Spike</span><span>Failover</span></div></div>
+        <div class="toolrow"><h3>CI and monitoring</h3><div class="tools"><span>GitHub Actions</span><span>GitLab CI</span><span>Datadog</span><span>CodeQL</span></div></div>
+        <div class="toolrow"><h3>Cloud and data</h3><div class="tools"><span>Azure</span><span>AWS</span><span>SQL Server</span><span>MongoDB</span></div></div>
+        <div class="toolrow"><h3>Testing types</h3><div class="tools"><span>Functional</span><span>Regression</span><span>Integration</span><span>SIT</span><span>UAT</span><span>Exploratory</span><span>Accessibility</span><span>Mobile</span><span>SDK</span><span>API</span><span>Microservices</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section id="work">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Selected work</h2>
+        <p>Recent work on diagnostic integrations and clinical workflows in veterinary practice software.</p>
+      </div>
+      <div class="projects">
+        <article class="project">
+          <div>
+            <h3>Integration reference application</h3>
+            <p>A Go application that stands in for diagnostic partner systems, so engineers can test integrations end to end without waiting on a live partner. It finds integration problems earlier and removes an external dependency from delivery.</p>
+            <div class="tags"><span>Go</span><span>GitHub Actions</span><span>CodeQL</span><span>Claude Code plugin</span></div>
+          </div>
+          <dl>
+            <div><dt>Design</dt><dd>A shared core with a separate adapter for each integration type, so new partners are quick to add.</dd></div>
+            <div><dt>Quality</dt><dd>250+ Go tests in CI with the race detector and CodeQL security analysis.</dd></div>
+            <div><dt>Adoption</dt><dd>Packaged as a plugin that runs it locally, and started automatically for the tests that need it.</dd></div>
+          </dl>
+        </article>
+
+        <article class="project">
+          <div>
+            <h3>Diagnostics E2E automation</h3>
+            <p>Playwright end-to-end and integration coverage built from scratch across diagnostics, partner integrations and clinical records: the workflows clinics depend on most.</p>
+            <div class="tags"><span>Playwright</span><span>TypeScript</span><span>GitLab CI</span><span>Visual checks</span></div>
+          </div>
+          <dl>
+            <div><dt>Coverage</dt><dd>Grew from zero to 82 specification files, with reusable Page Objects and helpers.</dd></div>
+            <div><dt>Reliability</dt><dd>Diagnosed flaky tests from CI evidence and fixed UI timing races at the root.</dd></div>
+            <div><dt>Pipelines</dt><dd>Suites run against a fresh staging site per run, with local runs aligned to CI.</dd></div>
+          </dl>
+        </article>
+
+        <article class="project">
+          <div>
+            <h3>AI-assisted QA tooling</h3>
+            <p>Reusable Claude Code skills and plugins that the whole engineering team uses, so good testing practice isn’t limited to one person.</p>
+            <div class="tags"><span>Claude Code</span><span>Test planning</span><span>Reporting</span></div>
+          </div>
+          <dl>
+            <div><dt>Test selection</dt><dd>Changes run only the relevant specs, giving faster and more relevant feedback.</dd></div>
+            <div><dt>Reporting</dt><dd>Automated the monthly cycle-time report, adding bug origin and bugs-by-module analysis.</dd></div>
+          </dl>
+        </article>
+      </div>
+      <p class="note">Partner names, protocols and internal system details are left out to protect confidentiality.</p>
+    </div>
+  </section>
+
+  <!-- FEEDBACK -->
+  <section id="feedback">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>What colleagues say</h2>
+      </div>
+      <div class="quotes">
+        <blockquote><p>“Your attention to detail and collaborative approach help us deliver faster and more effective results.”</p></blockquote>
+        <blockquote><p>“You play a key role in keeping integration work on track. Your willingness to share knowledge creates a supportive and productive team environment.”</p></blockquote>
+        <blockquote><p>“An outstanding QA professional and Scrum Master whose precision, ownership, and calm leadership consistently raise the bar for the entire team. She proactively identifies edge cases and process improvements that prevent issues before they surface.”</p></blockquote>
+        <blockquote><p>“Fantastic work on adding the end-to-end test cases! This effort significantly accelerates our delivery and ensures we continue to do work that truly matters for the health and well-being of pets, people, or livestock.”</p></blockquote>
+        <blockquote><p>“Excellent work in owning the reference app implementation and enabling more teams and third-party apps into the fold. Aside from that, you have been a massive help in various QA initiatives, taking ownership and proactiveness on several improvements. Keep the great work going.”</p></blockquote>
+        <blockquote><p>“Thank you, Sowmya, for innovatively creating the powerful tools for generating cycle time, testing time, and feature release reports. This significant improvement will greatly simplify and enhance our end-of-month reporting, making presentations much more impactful.”</p></blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section id="credentials">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Certifications and education</h2>
+      </div>
+      <div class="creds">
+        <div class="cred"><h3>ISTQB Foundation Level</h3><p>Certificate in Software Testing, 2013</p></div>
+        <div class="cred"><h3>LoadRunner 11.0 Accredited Integration Specialist</h3><p>Hewlett-Packard (HP), 2013</p></div>
+        <div class="cred"><h3>B.Tech, Computer Science and Engineering</h3><p>Jawaharlal Nehru Technological University, Hyderabad, 2009</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Let’s talk</h2>
+      </div>
+      <div class="btns">
+        <a class="btn primary" href="mailto:sowmya.velicherla@gmail.com">Email me</a>
+        <a class="btn" href="https://www.linkedin.com/in/svelicherla/">LinkedIn</a>
+        <a class="btn" href="https://github.com/sowmyavelicherla-23">GitHub</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">© 2026 Sowmya Velicherla · Auckland · Open to senior QA and quality engineering lead roles</div>
+</footer>
+
+</body>
+</html>
